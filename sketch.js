@@ -4,7 +4,7 @@ let move = {'up': 0,
 			'right': 0}
 
 const WORLD_SIZE = 480;
-const nCells = 10;
+const nCells = 8;
 const CELL_SIZE = WORLD_SIZE/nCells;
 
 let Game;
@@ -23,7 +23,6 @@ function draw(){
 	background(220);
 	Game.show();
 	Game.update();
-
 
 	// controls
 	if(keyIsPressed){
