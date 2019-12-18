@@ -10,13 +10,40 @@
     html, body {
       margin: 0;
       padding: 0;
+      background-color: #222;
+      font-family: "consolas";
     }
     canvas {
       display: block;
+      margin-left: 50%;
+      transform: translate(-50%, 0)
+      /*box-shadow: 0 10px 10px #fff;*/
+    }
+    #button {
+      font-size: 30px;
+      outline: none;
+      border: none;
+      border-radius: 0px;
+      transition: 0.3s;
+      margin-top: 50px;
+      padding-right: 15px;
+      padding-left: 15px;
+      height: 60px;
+      background-color: #333333;
+      color: #aaaaaa;
+    }
+    #button:hover {
+      background-color: #000;
+      color: #fff;
     }
   </style>
   <body>
     <script src="sketch.js"></script>
     <script src="classes.js"></script>
+    <center style='margin:0;'>
+      <input id='button' type='button' value='restart' onclick='restart()'/>
+      <input id='button' type='button' value='save seed' onclick='save_seed()'/>
+      <input id='button' type='button' value='show seeds' onclick='show_seeds()'/>
+    </center>
 	</body>
 </html>
